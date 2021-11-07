@@ -118,3 +118,33 @@ nome do sh em execução
 
     output
         ./file_name
+
+## condicional if
+
+existe várias maneiras de usar a condicional if
+
+    VAR1=""
+    VAR2="1"
+
+    if [[ "$VAR1" = "$VAR2" ]]; then
+        echo "as variáveis tem o mesmo valor"
+    fi
+
+    if [[ "$VAR1" = "$VAR2" ]]
+    then
+        echo "as variáveis tem o mesmo valor"
+    fi
+
+    if test "$VAR1" = "$VAR2"
+    then
+        echo "as variáveis tem o mesmo valor"
+    fi
+
+    if [ "$VAR1" = "$VAR2" ]
+    then
+        echo "as variáveis tem o mesmo valor"
+    fi
+
+quando a apenas uma condição, é recomendado usar uma única linha do comando como nos dois exemplos
+    [ "$VAR1" = "$VAR2" ] && echo "as variáveis tem o mesmo valor"
+    [ "$VAR1" = "$VAR2" ] || echo "as variáveis não tem o mesmo valor"
