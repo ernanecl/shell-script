@@ -1,25 +1,38 @@
-'
-em shell precisamos inserir qual vai ser o seu compilador
-
-caminho absoluto:
-    #!/bin/bash
-**não é recomendado manter o caminho absoluto, outras distribuições são caminhos diferentes
-
-recomendado usar o caminho:
-    #!/usr/bin/env bash
-nesse caso, o "env" busca o bash dentro das variáveis de ambiente
-'
 #!/usr/bin/env bash
 
-'
-ver permissões de arquivos e diretórios:
-    ll
-    ls -l
-    ls -la
+PARTY="vamos
+na
+festa
+"
 
-para dar permissão:
-    chmod +x file_name.sh
+echo "$PARTY"
 
-para executar o arquivo shell:
-    ./file_name.sh
-'
+####################
+
+NUMBER1=123
+NUMBER2=54
+
+TOTAL=$(($NUMBER1 - $NUMBER2))
+
+echo $TOTAL
+
+####################
+
+SAIDA_CAT=$(cat /etc/passwd | grep user_name)
+
+echo $SAIDA_CAT
+
+echo "---------------variáveis reservadas-----------------"
+
+echo "Parametro 1: $1"
+echo "Parametro 2: $2"
+
+echo "todos os paramentros $*"
+
+echo "quantos paramentros: $#"
+
+echo "status da ultima saída de comando: $?"
+
+echo "PID: $$"
+
+echo $0
