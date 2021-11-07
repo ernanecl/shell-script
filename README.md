@@ -1,6 +1,6 @@
 # shell-script
 
-######################################################################
+## compilador shell
 
 em shell precisamos inserir qual vai ser o seu compilador
 
@@ -12,7 +12,7 @@ recomendado usar o caminho:
     #!/usr/bin/env bash
 nesse caso, o "env" busca o bash dentro das variáveis de ambiente
 
-######################################################################
+## permissões de leitura, escrta e execução
 
 ver permissões de arquivos e diretórios:
     ll
