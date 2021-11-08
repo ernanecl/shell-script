@@ -119,6 +119,7 @@ nome do sh em execução
     output
         ./file_name
 
+
 ## condicional if
 
 existe várias maneiras de usar a condicional if
@@ -148,3 +149,29 @@ existe várias maneiras de usar a condicional if
 quando a apenas uma condição, é recomendado usar uma única linha do comando como nos dois exemplos
     [ "$VAR1" = "$VAR2" ] && echo "as variáveis tem o mesmo valor"
     [ "$VAR1" = "$VAR2" ] || echo "as variáveis não tem o mesmo valor"
+
+### operadores relacionais
+
+    usadas para trabalhar com números
+        -eq : (equal) Igual à
+        -ne : (not equal) Diferente de
+        -lt : (less than) Menor que
+        -gt : (greater than) Maior que
+        -le : (less or egual) Menor ou igual à
+        -ge : (greater or equal) Maior ou igual à
+
+    usadas para trabalhar com testos (strings)
+        = : Igual à (isso mesmo apenas um sinal de igual)
+        != : Diferente de
+        -n : String existe e não é vazia (apenas um operador)
+        -z: String existe e é vazia (apenas um operador)
+
+    outras condições do shell
+        -s: Arquivo existe, não vazio (apenas um operador)
+        -f: Arquivo existe, não é um diretório (apenas um operador)
+        -d: Diretório existe (apenas um operador)
+        -w: Arquivo, com permissão de escrita (apenas um operador)
+        -r: Arquivo, com permissão de leitura (apenas um operador)
+        -x: Arquivo, com parmissão de execução  -x  (apenas um operador)
+
+    link: http://blog.evaldojunior.com.br/aulas/blog/shell%20script/2011/05/08/shell-script-parte-2-controle-de-fluxo.html
