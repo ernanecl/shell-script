@@ -7,3 +7,9 @@ do
     $i não é divisivel por 2"
 done
 
+# another method
+
+for i in $(seq 0 10)
+do
+        [ $(($i % 2)) -eq 0 ] && echo "Número $i é divisível por 2"
+done
